@@ -47,7 +47,7 @@ bot.on("message", async (msg) => {
 							message += `ㅤㅤㅤㅤㅤ📋 Заказы:\n`
 
 							user.userOrder.forEach((order) => {
-								message += `🏷️ ${order.name}\n ✅ ${order.status}\n 💹 ${order.price}₽\n № ${order.order_id}\n 📐 ${order.size} (EU)\n\n`
+								message += `🏷️ ${order.name}\n ✅ ${order.status}\n 💹 ${order.price}₽\n № ${order.order_id}\n 📐 ${order.size} (EU)\n 🕗${order.time}\n\n`
 							})
 
 							message += ""
